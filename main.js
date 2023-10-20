@@ -2,3 +2,4 @@
 function tocaSomPom(){
 document.querySelector(`#sounds/acessa-ai-estourado-mt-estourado.mp3`).play();
 }
+//chamada ou invocação da função
