@@ -23,12 +23,9 @@ h1 {
 }
 
 img{
-  width: 200px;
+  width: 150px;
 }
 
-img{
-  width: 100px;
-}
 
 .teclado {
   background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
