@@ -22,6 +22,10 @@ h1 {
   font-size: 2rem;
 }
 
+img{
+  width: 200px;
+}
+
 .teclado {
   background: linear-gradient(to bottom, #eeeeee 0%,#cccccc 100%);
   box-shadow: 6px 8px 0 6px #666, 10px 10px 10px #000;
