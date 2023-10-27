@@ -1,6 +1,16 @@
 //Declaração/criação da função tocaSomPom
-function tocaSomPom(){
-document.querySelector(`#sounds/acessa-ai-estourado-mt-estourado.mp3`).play();
+function tocaSom(idElementoAudio){
+document.querySelector(idElementoAudio).play();
 }
-//chamada ou invocação da função tocaSomPom ao clicar no botão
-document.querySelector(`#sounds/acessa-ai-estourado-mt-estourado.mp3`).onclick = tocaSomPom;
+//criando a referência constante ListadeTeclas e buscando a classe.
+const ListadeTeclas = document.querySelectorAll ('.tecla');
+let contador =0;
+while(contador < ListadeTeclas.length) {
+    const efeito = ListadeTeclas[contador].classList[1];
+    const idAudio = "#som_" + efeito;
+    ListadeTeclas[contador].onclick = function(){
+        tocaSom(idAudio);
+    }
+    contador = contador + 1;
+    console.log(contador);
+}
