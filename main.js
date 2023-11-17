@@ -11,7 +11,12 @@ for(let contador = 0;contador < ListadeTeclas.length;contador++) {
     const efeito = teclas.classList[1];
     const idAudio = `#som_${efeito}`;
     teclas.onclick = function(){
-        tocaSom(idAudio);
+        tocaSom('idAudio');
     }
-
+    teclas.onkeydown = function(){
+        teclas.classList.add('ativa')
+    }
+    teclas.onkeyup = function(){
+        teclas.classList.remove('ativa');
+    }
 }
